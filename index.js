@@ -34,7 +34,7 @@ console.log(date);
     case 'Upcoming':
             console.log('Upcoming events');
             res.data.forEach(come=>{
-                let up= come.start;
+                let up= new Date(come.start);
                 if(up>date){
                     console.log(come);
                 }
